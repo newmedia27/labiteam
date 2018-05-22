@@ -26,7 +26,8 @@
         "mohorev/yii2-upload-behavior": "*",
         "yiisoft/yii2-imagine": "^2.1",
         "mihaildev/yii2-ckeditor": "*",
-        "mihaildev/yii2-elfinder": "*"
+        "mihaildev/yii2-elfinder": "*",
+        "zelenin/yii2-slug-behavior": "~1.5.1"
 
     },
     "require-dev": {

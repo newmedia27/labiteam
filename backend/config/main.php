@@ -63,7 +63,7 @@ return [
     ],
     'as access' => [
         'class' => 'yii\filters\AccessControl',
-        'except'=>['site/login','site/signup','site/error'],
+        'except'=>['site/login','site/signup'],
         'rules' => [
             [
                 'allow' => true,

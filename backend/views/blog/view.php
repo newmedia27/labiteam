@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model common\models\Blog */
 
 $this->title = $model->title;
-$this->params['breadcrumbs'][] = ['label' => 'Blogs', 'url' => ['index']];
+
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="blog-view">

@@ -23,8 +23,9 @@ use mihaildev\elfinder\ElFinder;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
-
+    <?= $form->field($model, 'image')->widget(\kartik\file\FileInput::classname(), [
+        'options' => ['accept' => 'image/*'],
+    ]); ?>
     <?= $form->field($model, 'preview')->widget(CKEditor::className(), [
         'editorOptions' => [
             'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать

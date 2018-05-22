@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-8" style="padding-top: 10px;">
                     <?= $model->preview ?>
-                    <span><a href="<?= \yii\helpers\Url::to(['blog/view','slug'=>$model->slug]) ?>">MORE...</a></span>
+                    <span><a href="<?= \yii\helpers\Url::to(['blog/view','id'=>$model->slug]) ?>">MORE...</a></span>
                 </div>
             </div>
 

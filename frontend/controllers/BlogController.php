@@ -203,10 +203,14 @@ class BlogController extends Controller
         ]);
     }
 
-    public function actionView($slug)
+    public function actionView($id)
     {
-        $model = Blog::find()->where(['slug' => $slug])->one();
+        $model = Blog::find()->where(['slug' => $id])->one();
+        if ($model) {
+            return $this->render('view', ['model' => $model]);
+        } else {
+            return $this->render('error',['name'=>$id, 'message'=>'Нет такого блога']);
+        }
 
-        return $this->render('view', ['model' => $model]);
     }
 }
